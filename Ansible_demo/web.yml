@@ -1,0 +1,17 @@
+
+- hosts: web
+  remote_user: ubuntu 
+  become: yes
+    
+  vars_prompt: 
+    - name: password
+      prompt: plz enter your password?
+      private: no
+  roles:
+    - web
+    
+    
+      
+
+        
+
